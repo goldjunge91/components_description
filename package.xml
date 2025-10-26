@@ -5,8 +5,7 @@
   <version>0.0.2</version>
   <description>URDF descriptions of components offered with Husarion robots</description>
   <license>Apache License 2.0</license>
-  <maintainer email="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX">example
-  </author>
+  <maintainer email="my_email@email.com">MY NAME</maintainer>
   <buildtool_depend>ament_cmake</buildtool_depend>
   <depend>depthai_descriptions</depend>
   <depend condition="($ROS_DISTRO != humble)">kortex_description</depend>
