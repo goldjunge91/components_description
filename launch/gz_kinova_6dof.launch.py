@@ -31,7 +31,7 @@ def generate_launch_description():
 
     initial_joint_controllers = PathJoinSubstitution(
         [
-            FindPackageShare("husarion_components_description"),
+            FindPackageShare("components_description"),
             "config",
             "kinova_6dof_controllers.yaml",
         ]
@@ -40,7 +40,7 @@ def generate_launch_description():
     gz_bridge_name = LaunchConfiguration("gz_bridge_name")
     gz_bridge_config_path = PathJoinSubstitution(
         [
-            FindPackageShare("husarion_components_description"),
+            FindPackageShare("components_description"),
             "config",
             "gz_kinova_remappings.yaml",
         ]

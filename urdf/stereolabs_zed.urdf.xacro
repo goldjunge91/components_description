@@ -326,7 +326,7 @@ limitations under the License.
     </xacro:if>
 
     <!-- GAZEBO -->
-    <xacro:include filename="$(find husarion_components_description)/urdf/gz_sensor.urdf.xacro" ns="gz_sensor" />
+    <xacro:include filename="$(find components_description)/urdf/gz_sensor.urdf.xacro" ns="gz_sensor" />
 
     <xacro:gz_sensor.camera
       reference="${component_name_underscore}camera_center"

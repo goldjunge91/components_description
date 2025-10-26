@@ -29,7 +29,7 @@ def generate_launch_description():
     robot_namespace = LaunchConfiguration("robot_namespace")
     component_name = LaunchConfiguration("component_name")
     initial_joint_controllers = PathJoinSubstitution(
-        [FindPackageShare("husarion_components_description"), "config", "ur_controllers.yaml"]
+        [FindPackageShare("components_description"), "config", "ur_controllers.yaml"]
     )
 
     namespaced_initial_joint_controllers_path = ReplaceString(

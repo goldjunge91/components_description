@@ -22,8 +22,8 @@ import xacro
 import yaml
 from ament_index_python.packages import get_package_share_directory
 
-husarion_components_description = get_package_share_directory("husarion_components_description")
-xacro_path = os.path.join(husarion_components_description, "test/component.urdf.xacro")
+components_description = get_package_share_directory("components_description")
+xacro_path = os.path.join(components_description, "test/component.urdf.xacro")
 
 # Type: [component_name, link_name, sensor_link_name, sensor_name, default_component_name]
 components_types_with_names = {

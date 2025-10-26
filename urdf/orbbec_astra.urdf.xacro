@@ -50,7 +50,7 @@ limitations under the License.
       <!-- <visual>
         <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
         <geometry>
-          <mesh filename="package://husarion_components_description/meshes/orbbec_astra.dae" />
+          <mesh filename="package://components_description/meshes/orbbec_astra.dae" />
         </geometry>
       </visual> -->
 
@@ -133,7 +133,7 @@ limitations under the License.
 
     <!-- GAZEBO -->
     <!-- https://github.com/orbbec/OrbbecSDK_ROS2#all-available-topics -->
-    <xacro:include filename="$(find husarion_components_description)/urdf/gz_sensor.urdf.xacro" ns="gz_sensor" />
+    <xacro:include filename="$(find components_description)/urdf/gz_sensor.urdf.xacro" ns="gz_sensor" />
 
     <xacro:gz_sensor.camera
       reference="${component_name_underscore}link"

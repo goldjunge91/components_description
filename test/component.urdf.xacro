@@ -6,7 +6,7 @@
   <xacro:property name="components_config_path_property" value="$(arg components_config_path)" />
 
   <xacro:if value="${components_config_path_property != ''}">
-    <xacro:include filename="$(find husarion_components_description)/urdf/components.urdf.xacro" ns="husarion_components" />
+    <xacro:include filename="$(find components_description)/urdf/components.urdf.xacro" ns="husarion_components" />
 
     <xacro:husarion_components.create_components
       components_config_path="${components_config_path_property}"

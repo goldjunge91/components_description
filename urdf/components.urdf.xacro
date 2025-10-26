@@ -58,7 +58,7 @@ limitations under the License.
 
       <xacro:if value="${type in dev_models_dict}">
         <xacro:include
-          filename="$(find husarion_components_description)/urdf/dev.urdf.xacro"
+          filename="$(find components_description)/urdf/dev.urdf.xacro"
           ns="dev"
         />
         <xacro:dev.dev
@@ -74,7 +74,7 @@ limitations under the License.
 
         <xacro:if value="${type == 'ANT02'}">
           <xacro:include
-            filename="$(find husarion_components_description)/urdf/teltonika_003R-00253.urdf.xacro"
+            filename="$(find components_description)/urdf/teltonika_003R-00253.urdf.xacro"
             ns="teltonika" />
 
           <xacro:teltonika.teltonika_003R-00253
@@ -88,7 +88,7 @@ limitations under the License.
 
         <xacro:if value="${type == 'CAM01'}">
           <xacro:include
-            filename="$(find husarion_components_description)/urdf/orbbec_astra.urdf.xacro"
+            filename="$(find components_description)/urdf/orbbec_astra.urdf.xacro"
             ns="camera" />
 
           <xacro:camera.orbbec_astra
@@ -102,7 +102,7 @@ limitations under the License.
 
         <xacro:if value="${type == 'CAM02'}">
           <xacro:include
-            filename="$(find husarion_components_description)/urdf/intel_realsense_d435.urdf.xacro"
+            filename="$(find components_description)/urdf/intel_realsense_d435.urdf.xacro"
             ns="camera" />
 
           <xacro:camera.intel_realsense_d435
@@ -125,7 +125,7 @@ limitations under the License.
 
           <xacro:if value="${type in zed_models_dict}">
           <xacro:include
-            filename="$(find husarion_components_description)/urdf/stereolabs_zed.urdf.xacro"
+            filename="$(find components_description)/urdf/stereolabs_zed.urdf.xacro"
             ns="camera" />
 
           <xacro:camera.zed_camera
@@ -147,7 +147,7 @@ limitations under the License.
 
         <xacro:if value="${type in luxonis_models_dict}">
           <xacro:include
-            filename="$(find husarion_components_description)/urdf/luxonis_depthai.urdf.xacro"
+            filename="$(find components_description)/urdf/luxonis_depthai.urdf.xacro"
             ns="camera" />
 
           <xacro:camera.luxonis_depthai
@@ -171,7 +171,7 @@ limitations under the License.
 
         <xacro:if value="${type in rplidar_models_dict}">
           <xacro:include
-            filename="$(find husarion_components_description)/urdf/slamtec_rplidar.urdf.xacro"
+            filename="$(find components_description)/urdf/slamtec_rplidar.urdf.xacro"
             ns="lidar"
           />
 
@@ -197,7 +197,7 @@ limitations under the License.
 
         <xacro:if value="${type in ouster_models_dict}">
           <xacro:include
-            filename="$(find husarion_components_description)/urdf/ouster.urdf.xacro"
+            filename="$(find components_description)/urdf/ouster.urdf.xacro"
             ns="lidar"
           />
           <xacro:lidar.ouster
@@ -212,7 +212,7 @@ limitations under the License.
 
         <xacro:if value="${type == 'LDR20'}">
           <xacro:include
-            filename="$(find husarion_components_description)/urdf/velodyne_puck.urdf.xacro"
+            filename="$(find components_description)/urdf/velodyne_puck.urdf.xacro"
             ns="lidar"
           />
 
@@ -227,7 +227,7 @@ limitations under the License.
 
         <xacro:if value="${type == 'MAN01'}">
           <xacro:include
-            filename="$(find husarion_components_description)/urdf/ur.urdf.xacro"
+            filename="$(find components_description)/urdf/ur.urdf.xacro"
             ns="manipulator"
           />
 
@@ -242,7 +242,7 @@ limitations under the License.
 
         <xacro:if value="${type == 'MAN02'}">
           <xacro:include
-            filename="$(find husarion_components_description)/urdf/ur.urdf.xacro"
+            filename="$(find components_description)/urdf/ur.urdf.xacro"
             ns="manipulator"
           />
 
@@ -258,7 +258,7 @@ limitations under the License.
 
         <xacro:if value="${type == 'MAN04'}">
           <xacro:include
-            filename="$(find husarion_components_description)/urdf/kinova.urdf.xacro"
+            filename="$(find components_description)/urdf/kinova.urdf.xacro"
             ns="manipulator"
           />
 
@@ -277,7 +277,7 @@ limitations under the License.
 
         <xacro:if value="${type == 'MAN05'}">
           <xacro:include
-            filename="$(find husarion_components_description)/urdf/kinova.urdf.xacro"
+            filename="$(find components_description)/urdf/kinova.urdf.xacro"
             ns="manipulator"
           />
 
@@ -296,7 +296,7 @@ limitations under the License.
 
         <xacro:if value="${type == 'MAN06'}">
           <xacro:include
-            filename="$(find husarion_components_description)/urdf/kinova.urdf.xacro"
+            filename="$(find components_description)/urdf/kinova.urdf.xacro"
             ns="manipulator"
           />
 
@@ -315,7 +315,7 @@ limitations under the License.
 
         <xacro:if value="${type == 'MAN07'}">
           <xacro:include
-            filename="$(find husarion_components_description)/urdf/kinova.urdf.xacro"
+            filename="$(find components_description)/urdf/kinova.urdf.xacro"
             ns="manipulator"
           />
 
@@ -333,7 +333,7 @@ limitations under the License.
         </xacro:if>
 
         <xacro:if value="${type == 'GRP02'}">
-          <xacro:include filename="$(find husarion_components_description)/urdf/robotiq.urdf.xacro"
+          <xacro:include filename="$(find components_description)/urdf/robotiq.urdf.xacro"
             ns="gripper" />
 
           <xacro:gripper.robotiq
@@ -347,7 +347,7 @@ limitations under the License.
 
         <xacro:if value="${type == 'WCH01'}">
           <xacro:include
-            filename="$(find husarion_components_description)/urdf/wibotic_receiver.urdf.xacro"
+            filename="$(find components_description)/urdf/wibotic_receiver.urdf.xacro"
             ns="wireless_charger" />
 
           <xacro:wireless_charger.wibotic_receiver

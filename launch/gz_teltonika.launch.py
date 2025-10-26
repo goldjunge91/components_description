@@ -24,11 +24,11 @@ from launch.substitutions import EnvironmentVariable, LaunchConfiguration
 
 
 def generate_launch_description():
-    husarion_components_description = get_package_share_directory(
-        "husarion_components_description"
+    components_description = get_package_share_directory(
+        "components_description"
     )
     gz_bridge_config_path = os.path.join(
-        husarion_components_description, "config", "gz_teltonika_remappings.yaml"
+        components_description, "config", "gz_teltonika_remappings.yaml"
     )
 
     robot_namespace = LaunchConfiguration("robot_namespace")

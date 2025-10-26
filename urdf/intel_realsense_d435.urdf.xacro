@@ -168,7 +168,7 @@ limitations under the License.
       <link name="${component_name_underscore}color_optical_frame" />
     </xacro:if>
 
-    <xacro:include filename="$(find husarion_components_description)/urdf/gz_sensor.urdf.xacro" ns="gz_sensor" />
+    <xacro:include filename="$(find components_description)/urdf/gz_sensor.urdf.xacro" ns="gz_sensor" />
 
     <!-- It is also possible to use single rgbd_camera sensor, but using separate rgb and depth camera
       should be more accurate for D435 - different frames and fovs can be set -->

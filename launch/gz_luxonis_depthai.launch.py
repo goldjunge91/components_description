@@ -27,11 +27,11 @@ from launch.substitutions import (
 
 
 def generate_launch_description():
-    husarion_components_description = get_package_share_directory(
-        "husarion_components_description"
+    components_description = get_package_share_directory(
+        "components_description"
     )
     gz_bridge_config_path = os.path.join(
-        husarion_components_description, "config", "gz_luxonis_depthai_remappings.yaml"
+        components_description, "config", "gz_luxonis_depthai_remappings.yaml"
     )
 
     robot_namespace = LaunchConfiguration("robot_namespace")

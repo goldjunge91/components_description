@@ -30,7 +30,7 @@ def generate_launch_description():
     component_name = LaunchConfiguration("component_name")
 
     initial_joint_controllers = PathJoinSubstitution(
-        [FindPackageShare("husarion_components_description"), "config", "robotiq_controllers.yaml"]
+        [FindPackageShare("components_description"), "config", "robotiq_controllers.yaml"]
     )
 
     namespaced_initial_joint_controllers_path = ReplaceString(

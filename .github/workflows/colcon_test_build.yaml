@@ -20,7 +20,7 @@ jobs:
 
       - uses: ros-tooling/action-ros-ci@v0.3
         with:
-          package-name: husarion_components_description
+          package-name: components_description
           target-ros2-distro: ${{ matrix.ros-distro }}
 
   colcon-test-build-humble:
@@ -38,5 +38,5 @@ jobs:
 
       - uses: ros-tooling/action-ros-ci@v0.3
         with:
-          package-name: husarion_components_description
+          package-name: components_description
           target-ros2-distro: ${{ matrix.ros-distro }}

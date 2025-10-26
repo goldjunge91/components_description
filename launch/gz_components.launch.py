@@ -41,7 +41,7 @@ def get_launch_description(name: str, package: str, namespace: str, component: y
     robot_namespace = namespace
 
     # choose a default name
-    # these are also defined in husarion_components_description/urdf/*.xacro files
+    # these are also defined in components_description/urdf/*.xacro files
     default_component_names = {
         "intel_realsense_d435": "camera",
         "kinova_6dof": "kinova",
@@ -135,8 +135,8 @@ def get_launch_descriptions_from_yaml_node(
 
 
 def launch_setup(context, *args, **kwargs):
-    husarion_components_description = get_package_share_directory(
-        "husarion_components_description"
+    components_description = get_package_share_directory(
+        "components_description"
     )
 
     components_config_path = LaunchConfiguration("components_config_path").perform(context)
@@ -152,7 +152,7 @@ def launch_setup(context, *args, **kwargs):
     actions = []
     if components_config is not None:
         actions += get_launch_descriptions_from_yaml_node(
-            components_config, husarion_components_description, namespace
+            components_config, components_description, namespace
         )
 
     return actions

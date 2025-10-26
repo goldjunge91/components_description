@@ -45,7 +45,7 @@ limitations under the License.
       cam_roll="${rpy.split()[0]}" cam_pitch="${rpy.split()[1]}" cam_yaw="${rpy.split()[2]}"
       simulation="${use_sim}" />
 
-    <xacro:include filename="$(find husarion_components_description)/urdf/gz_sensor.urdf.xacro"
+    <xacro:include filename="$(find components_description)/urdf/gz_sensor.urdf.xacro"
       ns="gz_sensor" />
 
     <xacro:gz_sensor.camera
